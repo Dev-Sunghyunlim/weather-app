@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import WeatherBox from "./component/WeatherBox";
 import WeatherButton from "./component/WeatherButton";
+import Container from "react-bootstrap/Container";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -8,7 +9,7 @@ import { ClipLoader } from "react-spinners";
 
 function App() {
   const [weather, setWeather] = useState(null);
-  const cities = ["Jakarta", "Hanoi", "London", "Osaka"];
+  const cities = ["Jakarta", "London", "Osaka"];
   const [city, setCity] = useState("Current Location");
   const [loading, setLoading] = useState(false);
   const [apiError, setAPIError] = useState("");
@@ -64,7 +65,7 @@ function App() {
   }, [city]);
 
   return (
-    <div>
+    <Container>
       {loading ? (
         <div className="main">
           <div className="weather-board">
@@ -87,7 +88,7 @@ function App() {
         apiError
       )}
       ;
-    </div>
+    </Container>
   );
 }
 
