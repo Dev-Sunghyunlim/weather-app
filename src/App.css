@@ -1,0 +1,43 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+.weather-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 550px;
+  height: 300px;
+  gap: 20px;
+  background-color: rgba(0, 0, 139, 0.8);
+  border: 2px solid black;
+  border-radius: 25px;
+}
+.city {
+  font-size: 20px;
+  color: skyblue;
+}
+.degree {
+  font-size: 40px;
+  color: wheat;
+}
+.W-condition {
+  font-size: 30px;
+  color: pink;
+}
+.menu-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 550px;
+  height: 75px;
+  background-color: rgb(0, 0, 10);
+  border: 2px solid black;
+  border-radius: 25px;
+}
